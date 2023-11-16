@@ -28,7 +28,7 @@ body {
   }
   
   .btn{
-  @apply rounded-full uppercase tracking-[1.02px] flex items-center transition-all
+  @apply rounded-full uppercase tracking-[1.02px] flex items-center justify-center transition-all
   
   }
   
