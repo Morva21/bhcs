@@ -3,18 +3,18 @@ import SmoothScroll from 'smooth-scroll';
 
 const Services = () => {
 
-  const scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 800, // Adjust the scrolling speed (milliseconds)
-    easing: 'easeInOutQuart', // Use a different easing function for a more subtle effect
+  // const scroll = new SmoothScroll('a[href*="#"]', {
+  //   speed: 800, // Adjust the scrolling speed (milliseconds)
+  //   easing: 'easeInOutQuart', // Use a different easing function for a more subtle effect
   
-  });
+  // });
   
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      scroll.animateScroll(element)
-    }
-  }
+  // const scrollToSection = (id) => {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     scroll.animateScroll(element)
+  //   }
+  // }
   
   return (
     <div>
