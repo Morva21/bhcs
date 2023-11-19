@@ -8,8 +8,8 @@ const AboutUs = () => {
      <div className="md:order-1">
               
                 <div >
-                    <h1 className="h1 mb-6 tracking-widest">About Us.</h1>
-                    <img src="/img/team/Picture1.jpg"  className='ml-20 rounded-lg shadow-xl'  alt="" />
+                    <h1 className="h1 mb-6 tracking-widest ">About Us.</h1>
+                    <img src="/img/team/Picture1.jpg"  className=' rounded-lg shadow-xl'  alt="" />
                 </div>
                 
               </div>
