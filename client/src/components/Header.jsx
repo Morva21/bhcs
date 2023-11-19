@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom"
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import SmoothScroll from 'smooth-scroll';
 import React, { useState } from "react";
-import { FaPhone, FaMap, FaCanadianMapleLeaf} from "react-icons/fa";
+import { FaPhone, } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import 'remixicon/fonts/remixicon.css'
 
@@ -10,13 +9,17 @@ const Header = () => {
 
 const [toggle, setStoggle] = useState(false)
 
+// Smooth Scroll
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 800, // Adjust the scrolling speed (milliseconds)
+  easing: 'easeInOutQuart', // Use a different easing function for a more subtle effect
+
+});
 
 const scrollToSection = (id) => {
   const element = document.getElementById(id);
   if (element) {
-    element.scrollIntoView({
-      behavior: 'smooth',
-    });
+    scroll.animateScroll(element)
   }
 }
 
@@ -29,12 +32,25 @@ const claseToggle =()=>{
   return (
  <>
  {/* Header */}
- <header className="py-18 md:pt-8 md:pb-14 ">
+ <header id='header' className="py-18 md:pt-8 md:pb-14 ">
+  <div className="continer mx-auto">
+  {/* className="bg-white text-black absolute w-full left-0 -bottom-[86px] shadow-custom2 h-16 justify-center rounded-[10px] hidden md:flex sm:items-center  md:px-[50px]" */}
+    <div  className=" bg-white text-black/70 w-full shadow-xl rounded-lg p-4">
+    <h3 className="uppercase font-semibold text-accent-secondary">Partner WIth Us</h3>
+    <p>Our Staffing Agency supply qualified and experienced Personal Support Workers and Nurses to hospitals, 
+      retirement homes and long-term care facilities on a contractual basis.</p>
+      <button className="btn btn-sm btn-outline w-[180px] mx-auto md:w-auto hover:text-white hover:bg-accent" onClick={() => scrollToSection('contact')}>Contact</button>
+  
+    </div>
+    
+    </div>
     {/* Container */}
-<div className="container mx-auto md:relative md:flex-row flex flex-col md:justify-between gap-y-4 md:gap-y-0">
+<div className="container mx-auto md:relative md:flex-row md:items-center flex flex-col md:justify-between gap-y-4 md:gap-y-0">
 {/* Header Logo */}
+
 <div className="flex justify-center lg:justify-normal">
-    <img src="/img/header/logo.svg" alt="" />
+    <img src="/img/header/bhs_new.png" width={311}  height={76} alt=""  className="py-[-40px]"/>
+    {/* <img src="/img/header/mels.png" width={311}  height={76} alt="" /> */}
 </div>
 
 {/* Header Info */}
@@ -52,7 +68,7 @@ const claseToggle =()=>{
   <i className="ri-map-pin-2-fill mr-1 text-1xl text-accent"></i>
    Durham, York, Peel, Greater Toronto, Belleville and Trenton
   </div>
-  <button className="btn btn-sm btn-outline w-[180px] mx-auto md:w-auto md:mx-0 hover:text-white hover:bg-accent">Book now</button>
+  <button className="btn btn-sm btn-outline w-[180px] mx-auto md:w-auto md:mx-0 hover:text-white hover:bg-accent" onClick={() => scrollToSection('contact')}>Book now</button>
   
 {/* Mobile Navigation */}
 <div onClick={claseToggle}  className="fixed left-0 top-0  md:hidden">
@@ -75,25 +91,22 @@ z-20">
 </div>
 
 <ul onClick={claseToggle} className="flex flex-col gap-y-5">
-<li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('section1')}>Home</li>
-<li><a href="#" className="text-secondary hover:text-accent transition-all duration-300"><a href="https:www.google.com">About Us</a></a></li>
-<li><a href="#" className="text-secondary hover:text-accent transition-all duration-300"><a href="#appointment">Appointments</a></a></li>
-<li><a href="#" className="text-secondary hover:text-accent transition-all duration-300"><a href="#services">Services</a></a></li>
-<li><a href="#" className="text-secondary hover:text-accent transition-all duration-300"><a href="#appoinment"></a>Contact Us</a></li>
-<li><a href="#" className="text-secondary hover:text-accent transition-all duration-300"><a href="#blog">Blog</a></a></li>
-        </ul>
+<li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('header')}>Home</li>
+        <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('about-us')}>About Us</li>
+        <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('contact')}>Contact us</li>
+        <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('services')}>Services</li>
+        <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('testimonial')}>Testimonials</li>
+       </ul>
 
 </nav>): ''}
 
 <nav className="bg-white text-black absolute w-full left-0 -bottom-[86px] shadow-custom2 h-16 justify-center rounded-[10px] hidden md:flex sm:items-center  md:px-[50px]"> 
     <ul className="flex gap-x-5">
-    <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('services')}>Home</li>
-        <li><a href="#" className="text-secondary hover:text-accent transition-all duration-300"><a href="#team">About Us</a></a></li>
-        <li ><a href="#" className="text-secondary hover:text-accent  transition-all duration-300"><a href="#appointment">Appointments</a></a></li>
-        <li><a href="#" className="text-secondary hover:text-accent hover:scale-50 transition-all duration-300"><a href="#services">Services</a></a></li>
-        <li><a href="#" className="text-secondary hover:text-accent hover:scale-50 transition-all duration-300"><a href="#appointment">Contact Us</a></a></li>
-        <li><a href="#" className="text-secondary hover:text-accent hover:scale-50 transition-all duration-300"><a href="#blog">Blog</a></a></li>
-            </ul>
+    <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('about-us')}>About Us</li>
+        <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('contact')}>Contact us</li>
+        <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('services')}>Services</li>
+        <li className="text-secondary hover:text-accent transition-all duration-300" onClick={() => scrollToSection('testimonial')}>Testimonials</li> 
+        </ul>
    
         </nav>
 

@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <div>
-      <section id='hero' className="hero bg-grey py-12 xl:pt-12  xl:pb-0 overflow-hidden">
+      <section id='hero' className="hero bg-grey py-12 xl:pt-12 rounded-lg  xl:pb-0 overflow-hidden">
         <div className="container mx-auto h-ful">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               {/* <!-- Left Column --> */}
@@ -22,7 +22,7 @@ const Hero = () => {
               {/* <!-- Right Column --> */}
               <div className="md:order-2 mt-3">
                 {/* <!--  -bottom-4 left-0 right-0 object-cover max-w-full max-h-full --> */}
-                <img src="/img/hero/img.png"  className="md:w-full md:h-auto"  alt="nurse in glasses" />
+                <img src="/img/header/Hero_img_new.png"  className="md:w-full md:h-auto md:mt-10 rounded-lg"  alt="nurse in glasses" />
               </div>
             </div>
           </div>
