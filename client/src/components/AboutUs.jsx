@@ -28,11 +28,20 @@ Celebrating an improved quality of life. Fostering a positive attribute.</p>
               </div>
      </div> */}
      <h2 className='h2 text-accent'>About Us</h2>
-     <p>At Bernadette Home Care Services, we believe every life is precious and deserving of utmost care and compassion.  As a dedicated care provide, we are committed to enhancing the lives our our clients and have been doing so for many years.  
+     <p>At Bernadette Home Care Services, we believe every life is precious and deserving of 
+      utmost care and compassion.  As a dedicated care provider, 
+      we are committed to enhancing the lives of our clients and 
+      have been doing so for many years.  
 
-Our Mission is to provide unparalleled support and comfort to every one, ensuring they lead fulfilling lives in the comfort of their homes.  We will provide a customized plan that will change as your loved one need change.  We provide short and long term, overnight and twenty-four hour care.  We will travel to all areas to meet your needs and we are committed 100% to our clients.  With a team of highly trained and compassionate caregivers, we offer a warm and nurturing care where everyone will feel valued, respected and cherished. </p>
+Our Mission is to provide unparalleled support and comfort to every one, ensuring they lead fulfilling lives in the comfort of their homes.  We will provide a customized plan that will change as your loved one needs change.  We provide short and long term, overnight and twenty-four hour care.  We will travel to all areas to meet your needs and we are committed 100% to our clients.  With a team of highly trained and compassionate caregivers, we offer a warm and nurturing care where everyone will feel valued, respected and cherished. </p>
      <h2 className='h2 text-accent'>Our Values</h2>
-     <p>We live by our core values and tirelessly promote them at all levels. Responding at a moment's notice. Integrity without compromise. Celebrating an improved quality of life. Fostering a positive attribute.</p>
+     <ul className="list-disc">
+      <li>We live by our core values and tirelessly promote them at all levels</li>
+      <li>Responding at a moment's notice</li>
+      <li>Integrity without compromise</li>
+      <li>Celebrating an improved quality of life</li>
+      <li>Fostering a positive attribute</li>
+     </ul>
     </div>
     </section>
   )

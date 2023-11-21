@@ -72,11 +72,9 @@ const ContactUs = () => {
     <div>
       <section id="contact" className="appointments section" >
         <div className="container mx-auto">
-          <h2 className="appointment__title h2 mb-5 xl:mb-[50px] text-center xl:text-left">
-            Email or call:{" "}
-            <span className="text-accent">
-              (416.575.2356 | 613.709.6291)
-            </span>
+          <h2 className="appointment__title h2 mb-5 xl:mb-[50px] text-center text-accent-secondary xl:text-left">
+            Contact Us
+            
           </h2>
           <form
             onSubmit={handleSubmit}
@@ -132,7 +130,7 @@ const ContactUs = () => {
               className="btn btn-lg btn-accent self-start"
               id="submitButton"
             >
-              Lets Talk...
+              Message
             </button>
             {loader && <Loader />}
              <ToastContainer />
