@@ -93,7 +93,7 @@ const ContactUs = () => {
                 id="name"
                 required={true}
                 className="input"
-                placeholder="Enter Full Name.."
+                placeholder="Enter Full Name"
               />
               <input
                 onChange={handleChange}
@@ -101,7 +101,7 @@ const ContactUs = () => {
                 id="phone"
                 required={true}
                 className="input"
-                placeholder="Enter Phone.."
+                placeholder="Enter Phone"
               />
             </div>
 
