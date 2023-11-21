@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <div>
-      <section id='hero' className="hero bg-grey py-12 xl:pt-12 rounded-lg  xl:pb-0 overflow-hidden">
+      <section id='hero' className="hero py-12 xl:pt-12 rounded-lg  xl:pb-0 overflow-hidden">
         <div className="container mx-auto h-ful">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               {/* <!-- Left Column --> */}
@@ -14,7 +14,7 @@ const Hero = () => {
                 </div>
                 <div className="p-4">
                     <h1 className="h1 mb-6">Let us take care of your loved ones.</h1>
-                    <p className="mb-[42px] md:max-w-xl">Our mission is to provide unparallel support and comfort to families, ensuring they lead fulfilling lives in the comfort of their homes.</p>
+                    {/* <p className="mb-[42px] md:max-w-xl">Our mission is to provide unparallel support and comfort to families, ensuring they lead fulfilling lives in the comfort of their homes.</p> */}
                 </div>
                 <button className="btn btn-lg py-[-50%] px-[-50%] mx-auto xl:mx-0 bg-accent text-white hover:bg-white hover:text-accent">Contact us</button>
               </div>

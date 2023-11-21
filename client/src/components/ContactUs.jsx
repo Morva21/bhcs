@@ -31,10 +31,7 @@ const ContactUs = () => {
         },
         body: JSON.stringify(formData),
       });
-      setFormData({name: "",
-      email: "",
-      phone: "",
-      message: "",})
+      
       const data = await response.json();
     
       toast.success('Email Sent Successfully! We will be in touch.', {
@@ -48,6 +45,12 @@ const ContactUs = () => {
       });
 
       setError(false);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
     } catch (error) {
       setError(true);
       toast.error('Error sending email. Please try again later.', {
@@ -61,15 +64,17 @@ const ContactUs = () => {
       });
     } finally{
       setLoader(false)
+     
+
     }
   };
   return (
     <div>
-      <section id="contact" className="appointments section">
+      <section id="contact" className="appointments section" >
         <div className="container mx-auto">
           <h2 className="appointment__title h2 mb-5 xl:mb-[50px] text-center xl:text-left">
             Email or call:{" "}
-            <span className="text-accent-tertiary">
+            <span className="text-accent">
               (416.575.2356 | 613.709.6291)
             </span>
           </h2>
@@ -127,7 +132,7 @@ const ContactUs = () => {
               className="btn btn-lg btn-accent self-start"
               id="submitButton"
             >
-              Book Appointment
+              Lets Talk...
             </button>
             {loader && <Loader />}
              <ToastContainer />

@@ -6,10 +6,12 @@ import 'swiper/css/pagination';
 
 
 const Testimonials = () => {
+
   return (
+
   <div id='testimonial' className=' bg-testimonials bg-cover bg-no-repeat bg-right py-12
     xl:min-h-[595px] xl:py-0 mt-1 rounded-lg'>
-     <p className='uppercase text-xl font-semibold text-black/70'>Testimonials</p>
+     <p className='uppercase text-xl font-semibold text-accent'>Testimonials</p>
      <div className="testimonial__container container mx-auto">
      <div className='md:grid md:grid-cols-2 md:gap-8'>
      <div className="md:order-1">
@@ -24,36 +26,36 @@ const Testimonials = () => {
       </div>
       
       <Swiper
-      pagination={true} modules={[Pagination]} className="mySwiper"
+      pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper"
       // install Swiper modules
       // modules={[Navigation, Pagination, Scrollbar, A11y]}
       // spaceBetween={50}
       // slidesPerView={1}
       // navigation
-      // autoplay={{delay: 5000}}
+      autoplay={{delay: 5000}}
       // pagination={{ clickable: true }}
       // scrollbar={{ draggable: true }}
       // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
-      <div className="max-w-[680px] mx-auto text-center xl:text-left">
+      <div className="max-w-[680px] mx-auto text-center xl:text-left ">
             
             <p className="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center
             xl:text-left before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0 
             before:w-10 before:h-10 before:bg:no-repeat after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0 
             after:w-10 after:h-10 after:bg:no-repeat mb-7
             "> 
-                {/* <!-- Message --> */}
+               
                 <span className="mx-2">
-                    Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. Animi, magnam?
+                We would like to thank the team of PSWs from Bernadette Home Care Services for the love and care they extended to my dad in his time of need.
+                 We could not have done it without their help.
                 </span>
             </p>
-            {/* <!-- Name --> */}
-            <div className="text-[26px] text-[#4c5354] font-semibold">Daniel Lyons</div>
-            {/* <!-- Job --> */}
-            <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer 1</div>
+          
+            <div className="text-[26px] text-[#4c5354] font-semibold">Jenny S</div>
+           
+            <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]"> Belleville</div>
         </div>
         
         
@@ -68,19 +70,20 @@ const Testimonials = () => {
             "> 
                 {/* <!-- Message --> */}
                 <span className="mx-2">
-                    Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. Animi, magnam?
+                Because of the outstanding care to my elderly parents from the staff of Bernadette Home Care Services, 
+                my parents were able to live in their homes for a very long time. 
                 </span>
             </p>
             {/* <!-- Name --> */}
-            <div className="text-[26px] text-[#4c5354] font-semibold">Daniel Lyons</div>
+            <div className="text-[26px] text-[#4c5354] font-semibold">Marie R</div>
             {/* <!-- Job --> */}
-            <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer 1</div>
+            <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Ajax</div>
         </div>
       </SwiperSlide>
+
       <SwiperSlide>
         
-      <div className="max-w-[680px] mx-auto text-center xl:text-left">
+      <div className="max-w-[680px] mx-auto text-center xl:text-left mb-12">
             
             <p className="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center
             xl:text-left before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0 
@@ -89,17 +92,17 @@ const Testimonials = () => {
             "> 
                 {/* <!-- Message --> */}
                 <span className="mx-2">
-                    Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. Animi, magnam?
+                The staff at Bernadette Home Care Services  made a difference in our father's life the last few months he had with us.  He was well taken care of in his home where he wanted to remain. 
+                 Thank you so much for everything.
                 </span>
             </p>
             {/* <!-- Name --> */}
-            <div className="text-[26px] text-[#4c5354] font-semibold">Daniel Lyons</div>
+            <div className="text-[26px] text-[#4c5354] font-semibold">Manny F</div>
             {/* <!-- Job --> */}
-            <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer 1</div>
+            <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Toronto</div>
         </div>
       </SwiperSlide>
-      <SwiperSlide>
+      {/* <SwiperSlide>
       <div className="max-w-[680px] mx-auto text-center xl:text-left">
             
             <p className="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center
@@ -107,19 +110,19 @@ const Testimonials = () => {
             before:w-10 before:h-10 before:bg:no-repeat after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0 
             after:w-10 after:h-10 after:bg:no-repeat mb-7
             "> 
-                {/* <!-- Message --> */}
+              
                 <span className="mx-2">
                     Lorem ipsum dolor sit, 
                     amet consectetur adipisicing elit. Animi, magnam?
                 </span>
             </p>
-            {/* <!-- Name --> */}
+          
             <div className="text-[26px] text-[#4c5354] font-semibold">Daniel Lyons</div>
-            {/* <!-- Job --> */}
+            
             <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer 1</div>
         </div>
-      </SwiperSlide>
-      <p className='text-accent '>Swipe for more</p>
+      </SwiperSlide> */}
+      {/* <p className='text-accent '>Swipe for more</p> */}
     </Swiper>
     </div>
     </div>

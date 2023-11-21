@@ -19,8 +19,8 @@ export default {
         primary: '#242a2b',
         secondary: '#808088',
         accent: {
-          DEFAULT: '#1cbccf',
-          secondary: '#18abbc',
+          DEFAULT: '#7e33f5',
+          secondary: '#8b53e4',
           tertiary: '#90c6cd'
         },
         grey: '#e8f0f1',
@@ -33,11 +33,11 @@ export default {
         custom2: '0px 0px 30px 0px rgba(8,73,81,0.06)'
       },
       backgroundImage:{
-        services: 'url(/img/services/bg.svg)',
-        testimonials: 'url(/img/testimonials/bg.svg)',
-        departments: 'url(/img/departments/bg.svg)',
-        quoteLeft: 'url(/icons/quote-left.svg)',
-        quoteRight: 'url(/icons/quote-right.svg)',
+        services: 'url(/img/services/bg.png)',
+        testimonials: 'url(/img/testimonials/bg)',
+       
+        quoteLeft: 'url(/icons/quote-left.png)',
+        quoteRight: 'url(/icons/quote-right.png)',
       },
 
     },
