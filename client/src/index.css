@@ -58,6 +58,7 @@ body {
   .input, .select {
       @apply w-full rounded-[40px] h-[66px] outline-none border border-[#dbdfdf] 
       text-secondary font-light placeholder:font-light placeholder:text-secondary
+      placeholder:text-lg
   }
   
   .input {

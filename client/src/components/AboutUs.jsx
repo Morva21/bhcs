@@ -3,7 +3,7 @@ import React from 'react'
 const AboutUs = () => {
   return (
     <section id= 'about-us' className="py-12 xl:pt-12  rounded-[15px] xl:pb-0 overflow-hidden"> 
-    <div className='container mx-auto h-full'>
+    <div className='container mx-auto h-full font-semibold'>
      {/* <div className='md:grid md:grid-cols-2 md:gap-8'>
      <div className="md:order-1">
               
