@@ -21,13 +21,12 @@ const Services = () => {
   
       <section id='services' className="services">
        
-          <div className='bg-cover bg-no-repeat max-w-[1466px] rounded-[5px]
-            h-[568px] relative flex items-center md:items-start'>
-             <div className='container mx-auto pt-5 font-semibold'>
-              <div className='flex items-center flex-col md:flex-row md:gap-x-20 md:mb-[6opx]'>
-                <div className="flex-1 max-w-2xl text-center md:text-left">
-                <h2 className='h2 flex-1 mb-4 md:mb-0 text-center text-accent md:text-left '>Services</h2>
-                <p className=' flex-1 mb-4 md:mb-0 text-center md:text-left'>We provide a variety of services to meet your needs.</p>
+  <div className='max-w-[1466px] rounded-[5px]  bg-grey/50 h-[568px] relative flex items-center md:items-start'>
+     <div className='container mx-auto pt-5 font-semibold'>
+       <div className='flex items-center flex-col md:flex-row md:gap-x-20 md:mb-[60px]'>
+         <div className="flex-1 max-w-2xl text-center md:text-left">
+            <h2 className='h2 flex-1 mb-4 md:mb-0 text-center text-accent md:text-left '>Services</h2>
+              <p className=' flex-1 mb-4 md:mb-0 text-center md:text-left'>We provide a variety of services to meet your needs.</p>
                 <div>
                 <img className='hidden md:block' src="/img/services/services_bg.png" width={250} height={200} alt="" />
                </div>
@@ -41,7 +40,7 @@ const Services = () => {
                   <li className="mb-2 ">Assist with transporting to and from appointments (not transportation)</li>
                   <li className="mb-2 ">Recovering from a personal injury </li>
                   <li className="mb-2 ">Light housekeeping</li>
-                  <li className="mb-2 ">Other services upon request</li>
+                  <li className="">Other services upon request</li>
                   
                  
                 </ul>
