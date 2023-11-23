@@ -43,25 +43,13 @@ const Footer = () => {
         <div className="flex-1 footer__item py-20">
                     <h4 className="h4 mb-5">Quick Links</h4>
                     <div className="flex  gap-x-5">
-                   
-                
                     <ul className="flex-1 flex flex-col gap-y-5">
-                        <li><a href="#" className="hover:text-accent transition-all" onClick={() => scrollToSection('header')}>Home</a></li>
-                       
+                    <li><a href="#" className="hover:text-accent transition-all" onClick={() => scrollToSection('header')}>Home</a></li>
                     </ul>
-                    {/* <ul className="flex-1 flex flex-col gap-y-5">
-                        <li><a href="#" className="hover:text-accent transition-all">Home</a></li>
-                        <li><a href="#" className="hover:text-accent transition-all">Book</a></li>
-                        <li><a href="#" className="hover:text-accent transition-all">Team</a></li>
-                        <li><a href="#" className="hover:text-accent transition-all">Departments</a></li>
-                        <li><a href="#" className="hover:text-accent transition-all">Questions</a></li>
-                    </ul> */}
-                  
-                
-            </div>
+                </div>
                 </div>
                 <div className="flex-1 footer__item mt-20" >
-                    <h4 className="h4 mb-5">Hours</h4>
+                <h4 className="h4 mb-5">Hours</h4>
                 <div>
 
                     <div className="flex-1 ">
