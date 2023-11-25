@@ -31,7 +31,7 @@ const Services = () => {
                 <img className='hidden md:block' src="/img/services/services_bg.png" width={250} height={200} alt="" />
                </div>
                 </div>
-                <div className='flex-1 max-w-2xl text-center md:text-left mt-10'>
+                <div className='flex-1 max-w-2xl text-center md:text-left mt-2'>
                 <ul className="list-disc"> 
                   <h2 className="mb-2 "> Personal Care</h2>
                   <h2 className="mb-2 ">Meal Preparation</h2>
