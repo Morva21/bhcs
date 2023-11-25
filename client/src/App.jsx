@@ -18,8 +18,8 @@ function App() {
    
       <Header />
       <Hero />
-      <Services />
       <AboutUs />
+      <Services />
       <Testimonials />
       <ContactUs />
       <Partner />
