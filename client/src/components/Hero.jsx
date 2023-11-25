@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               {/* <!-- Left Column --> */}
               <div className="md:order-1">
-                <div className="flex items-center mt-2 bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
+                <div className="flex items-center mt-20 bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
                     <i className="fa-solid fa-heart-pulse text-accent"></i>
                     <div className="uppercase text-base text-xs font-medium tracking-[2.24px]"> we can help</div>
                 </div>
@@ -20,7 +20,7 @@ const Hero = () => {
               </div>
            
               {/* <!-- Right Column --> */}
-              <div className="md:order-2 mt-3">
+              <div className="md:order-2 mt-20">
                 {/* <!--  -bottom-4 left-0 right-0 object-cover max-w-full max-h-full --> */}
                 <img src="/img/header/Hero_img_new.png"  className="md:w-full md:h-auto md:mt-10 rounded-lg"  alt="nurse in glasses" />
               </div>
