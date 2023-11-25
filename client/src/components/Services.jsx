@@ -39,7 +39,7 @@ const Services = () => {
                   <h2 className="mb-2 ">Companionship </h2>
                   <h2 className="mb-2 ">Assist with transporting to and from appointments (not transportation)</h2>
                   <h2 className="mb-2 ">Recovering from a personal injury </h2>
-                  <h2 className="mb-2 ">h2ght housekeeping</h2>
+                  <h2 className="mb-2 ">light housekeeping</h2>
                   <h2 className="">Other services upon request</h2>
                   
                  
