@@ -35,7 +35,7 @@ Celebrating an improved quality of life. Fostering a positive attribute.</p>
 
 Our Mission is to provide unparalleled support and comfort to every one, ensuring they lead fulfilling lives in the comfort of their homes.  We will provide a customized plan that will change as your loved one needs change.  We provide short and long term, overnight and twenty-four hour care.  We will travel to all areas to meet your needs and we are committed 100% to our clients.  With a team of highly trained and compassionate caregivers, we offer a warm and nurturing care where everyone will feel valued, respected and cherished. </p>
      <h2 className='h2 text-accent'>Our Values</h2>
-     <div className="h5 font-light">
+     <div className="h5 font-semibold">
       <h6>We live by our core values and tirelessly promote them at all levels</h6>
       <h2>Responding at a moment's notice</h2>
       <h2>Integrity without compromise</h2>
