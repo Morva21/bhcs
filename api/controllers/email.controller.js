@@ -5,7 +5,7 @@ export const Email = (req, res)=>{
   
     // Set up nodemailer transporter with email service credentials
     const transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      service: 'gmail',
       port: 587,
       secure: false,
       auth: {
