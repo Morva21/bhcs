@@ -9,6 +9,7 @@ export const Email = (req, res)=>{
       auth: {
         user: 'bernadettehomeservice@gmail.com',
         pass: process.env.GMAIL_PWD_1, 
+        method:'PLAIN'
       },
     });
   
