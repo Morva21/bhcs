@@ -4,8 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ContactUs = () => {
-  // const [alertSuccessPopup, setShowAlertSussessPopup] = useState(false);
-
+  
   const [error, setError] = useState(false);
   const [loader, setLoader]= useState(false)
   const [formData, setFormData] = useState({
@@ -81,11 +80,11 @@ const ContactUs = () => {
             className="appointment__form flex flex-col gap-y-5"
             id="appointmentForm"
           >
-            {/* <!-- select wrapper --> */}
+          
             <div className="flex flex-col lg:flex-row gap-5">
-              {/* <!-- select 1 --> */}
+              
             </div>
-            {/* <!-- Input Wrapper --> */}
+          
             <div className="flex flex-col lg:flex-row gap-1">
               <input
                 onChange={handleChange}

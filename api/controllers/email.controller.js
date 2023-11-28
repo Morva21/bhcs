@@ -7,14 +7,14 @@ export const Email = (req, res)=>{
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'ddw.web.dev.services@gmail.com',
-        pass: process.env.GMAIL_PWD, 
+        user: 'bernadettehomeservice@gmail.com',
+        pass: process.env.GMAIL_PWD_1, 
       },
     });
   
     const mailOptions = {
-      from: 'ddw.web.dev.services@gmail.com',
-      to: 'ddw.web.dev.services@gmail.com', 
+      from: 'bernadettehomeservice@gmail.com',
+      to: 'bernadettehomeservice@gmail.com', 
       subject: 'New Contact Form Submission',
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     };

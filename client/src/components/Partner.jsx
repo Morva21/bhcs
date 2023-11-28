@@ -2,9 +2,9 @@ import SmoothScroll from 'smooth-scroll';
 
 const Partner = () => {
     const scroll = new SmoothScroll('a[href*="#"]', {
-     // 1.  Adjust the scrolling speed (milliseconds)
+    
         speed: 800, 
-    // 2. Use a different easing function for a more subtle effect
+    
         easing: 'easeInOutQuart', 
       });
       
@@ -21,8 +21,7 @@ const Partner = () => {
     <p>Our Staffing Agency supply qualified and experienced Personal Support Workers and Nurses to hospitals, 
       retirement homes and long-term care facilities on a contractual basis.</p>
       <p>Send us an email and lets talk about it.</p>
-      {/* <button className="btn btn-sm btn-outline w-[180px] mx-auto md:w-auto hover:text-white hover:bg-accent" onClick={() => scrollToSection('contact')}>Contact</button> */}
-  
+     
     </div>
     
     </div>

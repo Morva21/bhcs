@@ -27,16 +27,9 @@ const Testimonials = () => {
       
       <Swiper
       pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper"
-      // install Swiper modules
-      // modules={[Navigation, Pagination, Scrollbar, A11y]}
-      // spaceBetween={50}
-      // slidesPerView={1}
-      // navigation
+      
       autoplay={{delay: 5000}}
-      // pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
+     
     >
       <SwiperSlide>
       <div className="max-w-[680px] mx-auto text-center xl:text-left ">
@@ -90,39 +83,19 @@ const Testimonials = () => {
             before:w-10 before:h-10 before:bg:no-repeat after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0 
             after:w-10 after:h-10 after:bg:no-repeat mb-7
             "> 
-                {/* <!-- Message --> */}
+             
                 <span className="mx-2">
                 The staff at Bernadette Home Care Services  made a difference in our father's life the last few months he had with us.  He was well taken care of in his home where he wanted to remain. 
                  Thank you so much for everything.
                 </span>
             </p>
-            {/* <!-- Name --> */}
+     
             <div className="text-[26px] text-[#4c5354] font-semibold">Manny F</div>
-            {/* <!-- Job --> */}
+       
             <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Toronto</div>
         </div>
       </SwiperSlide>
-      {/* <SwiperSlide>
-      <div className="max-w-[680px] mx-auto text-center xl:text-left">
-            
-            <p className="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center
-            xl:text-left before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0 
-            before:w-10 before:h-10 before:bg:no-repeat after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0 
-            after:w-10 after:h-10 after:bg:no-repeat mb-7
-            "> 
-              
-                <span className="mx-2">
-                    Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. Animi, magnam?
-                </span>
-            </p>
-          
-            <div className="text-[26px] text-[#4c5354] font-semibold">Daniel Lyons</div>
-            
-            <div className="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer 1</div>
-        </div>
-      </SwiperSlide> */}
-      {/* <p className='text-accent '>Swipe for more</p> */}
+     
     </Swiper>
     </div>
     </div>

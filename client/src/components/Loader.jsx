@@ -8,7 +8,7 @@ const style = {
     margin: 8,
     borderRadius: 0,
     display: "inline-block",
-    // background: "#1cbccf",
+    
     background:'#8b53e4',
 }
   

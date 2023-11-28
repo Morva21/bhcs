@@ -9,7 +9,7 @@ const Header = () => {
 
 const [toggle, setStoggle] = useState(false)
 
-// Smooth Scroll
+
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800, // Adjust the scrolling speed (milliseconds)
   easing: 'easeInOutQuart', // Use a different easing function for a more subtle effect
@@ -31,21 +31,20 @@ const claseToggle =()=>{
 
   return (
  <>
- {/* Header */}
+
  <header id='header' className="py-18 md:pt-8 md:pb-14 ">
   <div className="continer mx-auto">
-  {/* className="bg-white text-black absolute w-full left-0 -bottom-[86px] shadow-custom2 h-16 justify-center rounded-[10px] hidden md:flex sm:items-center  md:px-[50px]" */}
-    
+  
     </div>
-    {/* Container */}
+  
 <div className="container mx-auto md:relative md:flex-row md:items-center flex flex-col md:justify-between gap-y-4 md:gap-y-0">
-{/* Header Logo */}
+
 
 <div className="flex justify-center lg:justify-normal">
     <img src="/img/new_logo.jpg"  width={250} heigh={225} alt=""  className="py-[-40px]"/>
 </div>
 
-{/* Header Info */}
+
 <div className="flex flex-col gap-2 items-center md:mt-10 text-[17px]">
   <div className="flex">
     <MdAttachEmail className="mt-2 mr-1 text-1xl text-accent"/>
@@ -61,9 +60,7 @@ const claseToggle =()=>{
   <span className='ml-[-1%]'> Durham, York, Peel, Greater Toronto, Belleville and Trenton</span>
   
   </div>
-  {/* <button className="btn btn-sm btn-outline w-[180px] mx-auto md:w-auto md:mx-0 hover:text-white hover:bg-accent" onClick={() => scrollToSection('contact')}>Book now</button>
-   */}
-{/* Mobile Navigation */}
+  
 <div onClick={claseToggle}  className="fixed left-0 top-0  md:hidden">
 <div className="left-full  bg-black w-8 h-8 rounded-r-lg">
 <i className="ri-arrow-right-s-line text-2xl text-white "></i>
